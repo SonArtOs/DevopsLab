@@ -1,4 +1,3 @@
----
 name: Test Python App
 on: [push]  # Запуск при любом push
 
