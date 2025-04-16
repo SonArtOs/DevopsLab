@@ -1,9 +1,11 @@
 name: Docker Build and Push
 
 on:
-  push:
+  workflow_run:
+    workflows: ["Test Python App"]
     branches: [main]
-
+    types:
+      - completed
 jobs:
   build:
     runs-on: ubuntu-latest
